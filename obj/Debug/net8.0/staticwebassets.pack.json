@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\asset-manifest.json",
+      "PackagePath": "staticwebassets\\asset-manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\america-flag.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\america-flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\brand-logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\brand-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\app-store.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\app-store.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\google-play.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\google-play.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\maestro.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\maestro.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\mastercard.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\visa.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\sale_img.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\sale_img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\sliders\\slider1.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\sliders\\slider1.webp"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\sliders\\slider2.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\sliders\\slider2.webp"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\vegetable.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\vegetable.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\vietnam-flag.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\vietnam-flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\robots.txt",
+      "PackagePath": "staticwebassets\\robots.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\css\\main.5ab35496.css",
+      "PackagePath": "staticwebassets\\static\\js\\css\\main.5ab35496.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\css\\main.5ab35496.css.map",
+      "PackagePath": "staticwebassets\\static\\js\\css\\main.5ab35496.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\main.e34378c9.js",
+      "PackagePath": "staticwebassets\\static\\js\\main.e34378c9.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\main.e34378c9.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\static\\js\\main.e34378c9.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\main.e34378c9.js.map",
+      "PackagePath": "staticwebassets\\static\\js\\main.e34378c9.js.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Do_an_mon_hoc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Do_an_mon_hoc.props",
+      "PackagePath": "build\\Do_an_mon_hoc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Do_an_mon_hoc.props",
+      "PackagePath": "buildMultiTargeting\\Do_an_mon_hoc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Do_an_mon_hoc.props",
+      "PackagePath": "buildTransitive\\Do_an_mon_hoc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

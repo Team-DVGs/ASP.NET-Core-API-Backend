@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Do_an_mon_hoc.props" />
+</Project>
