@@ -412,7 +412,9 @@ public partial class MiniMarketContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasColumnType("datetime")
                 .HasColumnName("created_at");
-            entity.Property(e => e.Deleted).HasColumnName("deleted");
+            entity.Property(e => e.Deleted)
+                .HasDefaultValue(false)
+                .HasColumnName("deleted");
             entity.Property(e => e.Email)
                 .HasMaxLength(254)
                 .HasColumnName("email");
@@ -424,7 +426,8 @@ public partial class MiniMarketContext : DbContext
                 .HasDefaultValue((byte)0)
                 .HasColumnName("is_deleted");
             entity.Property(e => e.PasswordHash)
-                .HasMaxLength(50)
+                .HasMaxLength(64)
+                .IsFixedLength()
                 .HasColumnName("password_hash");
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(20)

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Do_an_mon_hoc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91400c6a88705dac1000dc73342bce62a68827bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e69a12074ffa4d0375f7cf1056d2240b596d0689")]
 [assembly: System.Reflection.AssemblyProductAttribute("Do_an_mon_hoc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Do_an_mon_hoc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

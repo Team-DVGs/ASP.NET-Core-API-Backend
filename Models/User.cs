@@ -11,8 +11,6 @@ public partial class User
 
     public string PhoneNumber { get; set; }
 
-    public string PasswordHash { get; set; }
-
     public string Fullname { get; set; }
 
     public string Email { get; set; }
@@ -24,6 +22,8 @@ public partial class User
     public bool? Deleted { get; set; }
 
     public byte? IsDeleted { get; set; }
+
+    public byte[] PasswordHash { get; set; }
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
