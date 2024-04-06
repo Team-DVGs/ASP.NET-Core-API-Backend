@@ -17,6 +17,8 @@ public partial class CartItem
 
     public int? ProductId { get; set; }
 
+    public byte? IsDeleted { get; set; }
+
     public virtual Cart Cart { get; set; }
 
     public virtual Product Product { get; set; }

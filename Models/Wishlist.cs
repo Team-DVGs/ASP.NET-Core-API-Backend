@@ -13,6 +13,8 @@ public partial class Wishlist
 
     public int? ProductId { get; set; }
 
+    public byte? IsDeleted { get; set; }
+
     public virtual Product Product { get; set; }
 
     public virtual User User { get; set; }

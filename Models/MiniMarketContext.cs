@@ -52,6 +52,9 @@ public partial class MiniMarketContext : DbContext
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("id");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.Name)
                 .IsRequired()
                 .HasMaxLength(50)
@@ -87,6 +90,9 @@ public partial class MiniMarketContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.CartId).HasColumnName("cart_id");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.ProductId).HasColumnName("product_id");
             entity.Property(e => e.Quantity).HasColumnName("quantity");
             entity.Property(e => e.Total).HasColumnName("total");
@@ -112,6 +118,9 @@ public partial class MiniMarketContext : DbContext
                 .IsRequired()
                 .HasMaxLength(50)
                 .HasColumnName("description");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.Name)
                 .IsRequired()
                 .HasMaxLength(50)
@@ -134,6 +143,9 @@ public partial class MiniMarketContext : DbContext
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("id");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.Name)
                 .IsRequired()
                 .HasMaxLength(50)
@@ -178,6 +190,9 @@ public partial class MiniMarketContext : DbContext
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("id");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.ProductId).HasColumnName("product_id");
             entity.Property(e => e.Sort).HasColumnName("sort");
             entity.Property(e => e.Thumbnail)
@@ -229,6 +244,9 @@ public partial class MiniMarketContext : DbContext
             entity.ToTable("Order_item");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.OrderId).HasColumnName("order_id");
             entity.Property(e => e.Price).HasColumnName("price");
             entity.Property(e => e.ProductId).HasColumnName("product_id");
@@ -317,6 +335,9 @@ public partial class MiniMarketContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasColumnType("datetime")
                 .HasColumnName("created_at");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.ProductId).HasColumnName("product_id");
             entity.Property(e => e.Rating).HasColumnName("rating");
             entity.Property(e => e.Title)
@@ -343,6 +364,9 @@ public partial class MiniMarketContext : DbContext
             entity.Property(e => e.EndTime)
                 .HasColumnType("datetime")
                 .HasColumnName("end_time");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.IsOpen).HasColumnName("is_open");
             entity.Property(e => e.Name)
                 .HasMaxLength(255)
@@ -360,6 +384,9 @@ public partial class MiniMarketContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.EventId).HasColumnName("event_id");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.ProductId).HasColumnName("product_id");
             entity.Property(e => e.Quantity).HasColumnName("quantity");
 
@@ -393,6 +420,9 @@ public partial class MiniMarketContext : DbContext
                 .IsRequired()
                 .HasMaxLength(50)
                 .HasColumnName("fullname");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.PasswordHash)
                 .HasMaxLength(50)
                 .HasColumnName("password_hash");
@@ -409,6 +439,7 @@ public partial class MiniMarketContext : DbContext
             entity.ToTable("Wishlist");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.IsDeleted).HasColumnName("is_deleted");
             entity.Property(e => e.ProductId).HasColumnName("product_id");
             entity.Property(e => e.UserId).HasColumnName("user_id");
 

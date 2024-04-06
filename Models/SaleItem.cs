@@ -15,6 +15,8 @@ public partial class SaleItem
 
     public int? Quantity { get; set; }
 
+    public byte? IsDeleted { get; set; }
+
     public virtual SaleEvent Event { get; set; }
 
     public virtual Product Product { get; set; }

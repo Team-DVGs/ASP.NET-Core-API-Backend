@@ -21,6 +21,8 @@ public partial class Review
 
     public int? UserId { get; set; }
 
+    public byte? IsDeleted { get; set; }
+
     public virtual Product Product { get; set; }
 
     public virtual User User { get; set; }

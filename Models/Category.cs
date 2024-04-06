@@ -17,6 +17,8 @@ public partial class Category
 
     public int CategoryGroupId { get; set; }
 
+    public byte? IsDeleted { get; set; }
+
     public virtual CategoryGroup CategoryGroup { get; set; }
 
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();

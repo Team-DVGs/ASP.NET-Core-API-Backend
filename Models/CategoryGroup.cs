@@ -13,5 +13,7 @@ public partial class CategoryGroup
 
     public string Thumbnail { get; set; }
 
+    public byte? IsDeleted { get; set; }
+
     public virtual ICollection<Category> Categories { get; set; } = new List<Category>();
 }

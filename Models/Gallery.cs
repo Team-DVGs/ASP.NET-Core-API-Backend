@@ -15,5 +15,7 @@ public partial class Gallery
 
     public int ProductId { get; set; }
 
+    public byte? IsDeleted { get; set; }
+
     public virtual Product Product { get; set; }
 }

@@ -13,5 +13,7 @@ public partial class Brand
 
     public string Thumbnail { get; set; }
 
+    public byte? IsDeleted { get; set; }
+
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

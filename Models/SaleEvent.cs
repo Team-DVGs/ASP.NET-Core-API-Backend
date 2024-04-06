@@ -17,5 +17,7 @@ public partial class SaleEvent
 
     public int? IsOpen { get; set; }
 
+    public byte? IsDeleted { get; set; }
+
     public virtual ICollection<SaleItem> SaleItems { get; set; } = new List<SaleItem>();
 }
