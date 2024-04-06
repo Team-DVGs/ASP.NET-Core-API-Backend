@@ -1,91 +1,91 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\asset-manifest.json",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\asset-manifest.json",
       "PackagePath": "staticwebassets\\asset-manifest.json"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\america-flag.jpg",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\america-flag.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\america-flag.jpg"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\brand-logo.png",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\brand-logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\brand-logo.png"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\app-store.jpg",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\logo\\app-store.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\logo\\app-store.jpg"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\google-play.png",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\logo\\google-play.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo\\google-play.png"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\maestro.png",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\logo\\maestro.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo\\maestro.png"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\mastercard.png",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\logo\\mastercard.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo\\mastercard.png"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\logo\\visa.png",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\logo\\visa.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo\\visa.png"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\sale_img.jpg",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\sale_img.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\sale_img.jpg"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\sliders\\slider1.webp",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\sliders\\slider1.webp",
       "PackagePath": "staticwebassets\\assets\\img\\sliders\\slider1.webp"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\sliders\\slider2.webp",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\sliders\\slider2.webp",
       "PackagePath": "staticwebassets\\assets\\img\\sliders\\slider2.webp"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\vegetable.jpg",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\vegetable.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\vegetable.jpg"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\assets\\img\\vietnam-flag.jpg",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\assets\\img\\vietnam-flag.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\vietnam-flag.jpg"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\favicon.ico",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\index.html",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\manifest.json",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\robots.txt",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\robots.txt",
       "PackagePath": "staticwebassets\\robots.txt"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\css\\main.5ab35496.css",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\static\\js\\css\\main.5ab35496.css",
       "PackagePath": "staticwebassets\\static\\js\\css\\main.5ab35496.css"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\css\\main.5ab35496.css.map",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\static\\js\\css\\main.5ab35496.css.map",
       "PackagePath": "staticwebassets\\static\\js\\css\\main.5ab35496.css.map"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\main.e34378c9.js",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\static\\js\\main.e34378c9.js",
       "PackagePath": "staticwebassets\\static\\js\\main.e34378c9.js"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\main.e34378c9.js.LICENSE.txt",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\static\\js\\main.e34378c9.js.LICENSE.txt",
       "PackagePath": "staticwebassets\\static\\js\\main.e34378c9.js.LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\wwwroot\\static\\js\\main.e34378c9.js.map",
+      "Id": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\wwwroot\\static\\js\\main.e34378c9.js.map",
       "PackagePath": "staticwebassets\\static\\js\\main.e34378c9.js.map"
     },
     {

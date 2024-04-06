@@ -2,81 +2,64 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace Do_an_mon_hoc.Models;
 
 public partial class Product
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public string Thumbnail { get; set; }
 
     public string Name { get; set; }
 
-    public double? RegPrice { get; set; }
+    public double RegPrice { get; set; }
 
-    public int? DiscountPercent { get; set; }
+    public byte DiscountPercent { get; set; }
 
-    public double? DiscountPrice { get; set; }
+    public double DiscountPrice { get; set; }
+
+    public int Quantity { get; set; }
 
     public string Unit { get; set; }
 
-    public int? Quantity { get; set; }
-
     public string Canonical { get; set; }
+
+    public double Rating { get; set; }
 
     public string Description { get; set; }
 
-    public DateTime? CreatedAt { get; set; }
-
-    public DateTime? UpdatedAt { get; set; }
-
-    public bool? DeletedAt { get; set; }
-
-    public double? Rating { get; set; }
-
     public string Article { get; set; }
 
-    public int? IsFeatured { get; set; }
+    public bool IsFeatured { get; set; }
 
-    [Display(AutoGenerateField = false)]
-    public int? CategoryId { get; set; }
+    public bool IsVisible { get; set; }
 
-    [Display(AutoGenerateField = false)]
-    public int? BrandId { get; set; }
+    public DateTime CreatedAt { get; set; }
 
-    public int? IsVisible { get; set; }
+    public DateTime UpdatedAt { get; set; }
 
-    [ForeignKey("BrandId")]
+    public string DeletedAt { get; set; }
+
+    public int CategoryId { get; set; }
+
+    public int BrandId { get; set; }
+
+    public byte? IsDeleted { get; set; }
+
     public virtual Brand Brand { get; set; }
 
-    [Display(AutoGenerateField = false)]
     public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 
-    [ForeignKey("CategoryId")]
     public virtual Category Category { get; set; }
 
-    [Display(AutoGenerateField = false)]
     public virtual ICollection<Gallery> Galleries { get; set; } = new List<Gallery>();
 
-    [Display(AutoGenerateField = false)]
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
-    [Display(AutoGenerateField = false)]
     public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
 
-    [Display(AutoGenerateField = false)]
     public virtual ICollection<SaleItem> SaleItems { get; set; } = new List<SaleItem>();
 
-    [Display(AutoGenerateField = false)]
     public virtual ICollection<Wishlist> Wishlists { get; set; } = new List<Wishlist>();
-
-    public override string ToString()
-    {
-        return Id + ": " + Name;
-    }
 }

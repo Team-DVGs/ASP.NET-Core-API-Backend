@@ -20,7 +20,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[Brand]",
+         "Name": "[dbo].[brand]",
          "ObjectType": 0
       },
       {
@@ -32,11 +32,11 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[Category]",
+         "Name": "[dbo].[category]",
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[Category_Group]",
+         "Name": "[dbo].[category_group]",
          "ObjectType": 0
       },
       {
@@ -44,7 +44,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[Gallery]",
+         "Name": "[dbo].[gallery]",
          "ObjectType": 0
       },
       {
@@ -52,7 +52,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[Product]",
+         "Name": "[dbo].[product]",
          "ObjectType": 0
       },
       {
@@ -76,7 +76,7 @@
          "ObjectType": 0
       }
    ],
-   "UiHint": "laptop-bcjh549e\\sqlexpress.minimarket.dbo",
+   "UiHint": "laptop-bcjh549e\\vinh.minimarket.dbo",
    "UncountableWords": null,
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,

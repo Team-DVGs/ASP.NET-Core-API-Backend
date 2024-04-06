@@ -47,22 +47,24 @@ public partial class MiniMarketContext : DbContext
     {
         modelBuilder.Entity<Brand>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Brand__3213E83F6213AE34");
+            entity.ToTable("brand");
 
-            entity.ToTable("Brand");
-
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
             entity.Property(e => e.Name)
+                .IsRequired()
                 .HasMaxLength(50)
                 .HasColumnName("name");
             entity.Property(e => e.Thumbnail)
-                .HasMaxLength(500)
+                .IsRequired()
+                .HasMaxLength(150)
                 .HasColumnName("thumbnail");
         });
 
         modelBuilder.Entity<Cart>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Cart__3213E83F7C730BB6");
+            entity.HasKey(e => e.Id).HasName("PK__Cart__3213E83FD2595A7B");
 
             entity.ToTable("Cart");
 
@@ -74,12 +76,12 @@ public partial class MiniMarketContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Carts)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Cart__user_id__5B78929E");
+                .HasConstraintName("FK__Cart__user_id__1EF99443");
         });
 
         modelBuilder.Entity<CartItem>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Cart_ite__3213E83F61F3D107");
+            entity.HasKey(e => e.Id).HasName("PK__Cart_ite__3213E83F693DD222");
 
             entity.ToTable("Cart_item");
 
@@ -91,61 +93,60 @@ public partial class MiniMarketContext : DbContext
 
             entity.HasOne(d => d.Cart).WithMany(p => p.CartItems)
                 .HasForeignKey(d => d.CartId)
-                .HasConstraintName("FK__Cart_item__cart___5E54FF49");
+                .HasConstraintName("FK__Cart_item__cart___1FEDB87C");
 
             entity.HasOne(d => d.Product).WithMany(p => p.CartItems)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Cart_item__produ__5F492382");
+                .HasConstraintName("FK__Cart_item__produ__20E1DCB5");
         });
 
         modelBuilder.Entity<Category>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Category__3213E83F9F3E798C");
+            entity.ToTable("category");
 
-            entity.ToTable("Category");
-
-            entity.HasIndex(e => e.Name, "UQ__Category__72E12F1BAA46B1C0").IsUnique();
-
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
             entity.Property(e => e.CategoryGroupId).HasColumnName("category_group_id");
             entity.Property(e => e.Description)
-                .HasColumnType("text")
+                .IsRequired()
+                .HasMaxLength(50)
                 .HasColumnName("description");
             entity.Property(e => e.Name)
                 .IsRequired()
-                .HasMaxLength(100)
+                .HasMaxLength(50)
                 .HasColumnName("name");
-            entity.Property(e => e.ProductQuantity).HasColumnName("product_quantity");
             entity.Property(e => e.Thumbnail)
-                .HasMaxLength(500)
+                .IsRequired()
+                .HasMaxLength(200)
                 .HasColumnName("thumbnail");
 
             entity.HasOne(d => d.CategoryGroup).WithMany(p => p.Categories)
                 .HasForeignKey(d => d.CategoryGroupId)
-                .HasConstraintName("FK__Category__catego__4B422AD5");
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__category__catego__21D600EE");
         });
 
         modelBuilder.Entity<CategoryGroup>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Category__3213E83F08B29327");
+            entity.ToTable("category_group");
 
-            entity.ToTable("Category_Group");
-
-            entity.HasIndex(e => e.Name, "UQ__Category__72E12F1B94DD24A4").IsUnique();
-
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
             entity.Property(e => e.Name)
                 .IsRequired()
-                .HasMaxLength(200)
+                .HasMaxLength(50)
                 .HasColumnName("name");
             entity.Property(e => e.Thumbnail)
-                .HasMaxLength(500)
+                .IsRequired()
+                .HasMaxLength(150)
                 .HasColumnName("thumbnail");
         });
 
         modelBuilder.Entity<Feedback>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Feedback__3213E83FFCB1CC66");
+            entity.HasKey(e => e.Id).HasName("PK__Feedback__3213E83FAA282CA8");
 
             entity.ToTable("Feedback");
 
@@ -172,25 +173,27 @@ public partial class MiniMarketContext : DbContext
 
         modelBuilder.Entity<Gallery>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Gallery__3213E83FCDC40A7F");
+            entity.ToTable("gallery");
 
-            entity.ToTable("Gallery");
-
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
             entity.Property(e => e.ProductId).HasColumnName("product_id");
             entity.Property(e => e.Sort).HasColumnName("sort");
             entity.Property(e => e.Thumbnail)
-                .HasMaxLength(500)
+                .IsRequired()
+                .HasMaxLength(300)
                 .HasColumnName("thumbnail");
 
             entity.HasOne(d => d.Product).WithMany(p => p.Galleries)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Gallery__product__52E34C9D");
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__gallery__product__22CA2527");
         });
 
         modelBuilder.Entity<Order>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK___Order__3213E83FECB1B955");
+            entity.HasKey(e => e.Id).HasName("PK___Order__3213E83F390D5E6D");
 
             entity.ToTable("_Order");
 
@@ -216,12 +219,12 @@ public partial class MiniMarketContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK___Order__user_id__6225902D");
+                .HasConstraintName("FK___Order__user_id__1E05700A");
         });
 
         modelBuilder.Entity<OrderItem>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Order_it__3213E83FBA81F797");
+            entity.HasKey(e => e.Id).HasName("PK__Order_it__3213E83F660D1716");
 
             entity.ToTable("Order_item");
 
@@ -234,71 +237,76 @@ public partial class MiniMarketContext : DbContext
 
             entity.HasOne(d => d.Order).WithMany(p => p.OrderItems)
                 .HasForeignKey(d => d.OrderId)
-                .HasConstraintName("FK__Order_ite__order__6501FCD8");
+                .HasConstraintName("FK__Order_ite__order__23BE4960");
 
             entity.HasOne(d => d.Product).WithMany(p => p.OrderItems)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Order_ite__produ__65F62111");
+                .HasConstraintName("FK__Order_ite__produ__24B26D99");
         });
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Product__3213E83F33EAEED3");
+            entity.ToTable("product");
 
-            entity.ToTable("Product");
-
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
             entity.Property(e => e.Article)
-                .HasMaxLength(255)
+                .IsRequired()
+                .HasMaxLength(50)
                 .HasColumnName("article");
             entity.Property(e => e.BrandId).HasColumnName("brand_id");
             entity.Property(e => e.Canonical)
-                .HasMaxLength(30)
+                .HasMaxLength(50)
                 .HasColumnName("canonical");
             entity.Property(e => e.CategoryId).HasColumnName("category_id");
-            entity.Property(e => e.CreatedAt)
-                .HasColumnType("datetime")
-                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedAt).HasColumnName("created_at");
             entity.Property(e => e.DeletedAt)
-                .HasDefaultValue(false)
+                .IsRequired()
+                .HasMaxLength(50)
+                .HasDefaultValueSql("((0))")
                 .HasColumnName("deleted_at");
             entity.Property(e => e.Description)
-                .HasMaxLength(1000)
+                .HasMaxLength(1550)
                 .HasColumnName("description");
             entity.Property(e => e.DiscountPercent).HasColumnName("discount_percent");
             entity.Property(e => e.DiscountPrice).HasColumnName("discount_price");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue((byte)0)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.IsFeatured).HasColumnName("is_featured");
             entity.Property(e => e.IsVisible).HasColumnName("is_visible");
             entity.Property(e => e.Name)
-                .HasMaxLength(350)
+                .IsRequired()
+                .HasMaxLength(250)
                 .HasColumnName("name");
             entity.Property(e => e.Quantity).HasColumnName("quantity");
-            entity.Property(e => e.Rating)
-                .HasColumnType("decimal(2, 1)")
-                .HasColumnName("rating");
+            entity.Property(e => e.Rating).HasColumnName("rating");
             entity.Property(e => e.RegPrice).HasColumnName("reg_price");
             entity.Property(e => e.Thumbnail)
-                .HasMaxLength(500)
+                .IsRequired()
+                .HasMaxLength(200)
                 .HasColumnName("thumbnail");
             entity.Property(e => e.Unit)
-                .HasMaxLength(30)
+                .IsRequired()
+                .HasMaxLength(50)
                 .HasColumnName("unit");
-            entity.Property(e => e.UpdatedAt)
-                .HasColumnType("datetime")
-                .HasColumnName("updated_at");
+            entity.Property(e => e.UpdatedAt).HasColumnName("updated_at");
 
             entity.HasOne(d => d.Brand).WithMany(p => p.Products)
                 .HasForeignKey(d => d.BrandId)
-                .HasConstraintName("FK__Product__brand_i__5006DFF2");
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__product__brand_i__25A691D2");
 
             entity.HasOne(d => d.Category).WithMany(p => p.Products)
                 .HasForeignKey(d => d.CategoryId)
-                .HasConstraintName("FK__Product__categor__4F12BBB9");
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__product__categor__269AB60B");
         });
 
         modelBuilder.Entity<Review>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Review__3213E83F25299274");
+            entity.HasKey(e => e.Id).HasName("PK__Review__3213E83F75FCB48F");
 
             entity.ToTable("Review");
 
@@ -318,16 +326,16 @@ public partial class MiniMarketContext : DbContext
 
             entity.HasOne(d => d.Product).WithMany(p => p.Reviews)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Review__product___55BFB948");
+                .HasConstraintName("FK__Review__product___278EDA44");
 
             entity.HasOne(d => d.User).WithMany(p => p.Reviews)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Review__user_id__56B3DD81");
+                .HasConstraintName("FK__Review__user_id__2882FE7D");
         });
 
         modelBuilder.Entity<SaleEvent>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Sale_Eve__3213E83F1DE3CF1C");
+            entity.HasKey(e => e.Id).HasName("PK__Sale_Eve__3213E83F4D3BA373");
 
             entity.ToTable("Sale_Event");
 
@@ -346,7 +354,7 @@ public partial class MiniMarketContext : DbContext
 
         modelBuilder.Entity<SaleItem>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__sale_ite__3213E83FC9DACFCE");
+            entity.HasKey(e => e.Id).HasName("PK__sale_ite__3213E83FBC931BE8");
 
             entity.ToTable("sale_item");
 
@@ -357,16 +365,16 @@ public partial class MiniMarketContext : DbContext
 
             entity.HasOne(d => d.Event).WithMany(p => p.SaleItems)
                 .HasForeignKey(d => d.EventId)
-                .HasConstraintName("FK__sale_item__event__6BAEFA67");
+                .HasConstraintName("FK__sale_item__event__297722B6");
 
             entity.HasOne(d => d.Product).WithMany(p => p.SaleItems)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__sale_item__produ__6ABAD62E");
+                .HasConstraintName("FK__sale_item__produ__2A6B46EF");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__User__3213E83FB6C25A20");
+            entity.HasKey(e => e.Id).HasName("PK__User__3213E83F5B26C85D");
 
             entity.ToTable("User");
 
@@ -386,8 +394,7 @@ public partial class MiniMarketContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("fullname");
             entity.Property(e => e.PasswordHash)
-                .HasMaxLength(60)
-                .IsUnicode(false)
+                .HasMaxLength(50)
                 .HasColumnName("password_hash");
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(20)
@@ -397,7 +404,7 @@ public partial class MiniMarketContext : DbContext
 
         modelBuilder.Entity<Wishlist>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Wishlist__3213E83FD5C28220");
+            entity.HasKey(e => e.Id).HasName("PK__Wishlist__3213E83FFE075D75");
 
             entity.ToTable("Wishlist");
 
@@ -407,11 +414,11 @@ public partial class MiniMarketContext : DbContext
 
             entity.HasOne(d => d.Product).WithMany(p => p.Wishlists)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Wishlist__produc__0EF836A4");
+                .HasConstraintName("FK__Wishlist__produc__2B5F6B28");
 
             entity.HasOne(d => d.User).WithMany(p => p.Wishlists)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Wishlist__user_i__0E04126B");
+                .HasConstraintName("FK__Wishlist__user_i__2C538F61");
         });
 
         OnModelCreatingPartial(modelBuilder);

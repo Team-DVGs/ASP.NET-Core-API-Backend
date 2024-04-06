@@ -2,15 +2,11 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace Do_an_mon_hoc.Models;
 
 public partial class OrderItem
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public double? Price { get; set; }
@@ -19,19 +15,11 @@ public partial class OrderItem
 
     public double? Total { get; set; }
 
-    [Display(AutoGenerateField = false)]
     public int? OrderId { get; set; }
 
-    [Display(AutoGenerateField = false)]
     public int? ProductId { get; set; }
 
-    [ForeignKey("OrderId")]
     public virtual Order Order { get; set; }
 
-    public override string ToString()
-    {
-        return Product.Name + ": " + Quantity;
-    }
-    [ForeignKey("ProductId")]
     public virtual Product Product { get; set; }
 }

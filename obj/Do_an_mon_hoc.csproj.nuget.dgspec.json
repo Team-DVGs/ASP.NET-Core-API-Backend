@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\Do_an_mon_hoc.csproj": {}
+    "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\Do_an_mon_hoc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\Do_an_mon_hoc.csproj": {
+    "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\Do_an_mon_hoc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\Do_an_mon_hoc.csproj",
+        "projectUniqueName": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\Do_an_mon_hoc.csproj",
         "projectName": "Do_an_mon_hoc",
-        "projectPath": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\Do_an_mon_hoc.csproj",
+        "projectPath": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\Do_an_mon_hoc.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\IS220\\Do_an\\Do_an_mon_hoc\\obj\\",
+        "outputPath": "D:\\ASP.Net\\ASP.NET-Core-API-Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -69,6 +69,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
             },
             "SendGrid": {
               "target": "Package",

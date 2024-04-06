@@ -2,15 +2,11 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace Do_an_mon_hoc.Models;
 
 public partial class Order
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public string Address { get; set; }
@@ -25,16 +21,9 @@ public partial class Order
 
     public DateTime? CreatedAt { get; set; }
 
-    [Display(AutoGenerateField = false)]
     public int? UserId { get; set; }
 
-    public override string ToString()
-    {
-        return Id.ToString();
-    }
-    [Display(AutoGenerateField = false)]
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
-    [ForeignKey("UserId")]
     public virtual User User { get; set; }
 }

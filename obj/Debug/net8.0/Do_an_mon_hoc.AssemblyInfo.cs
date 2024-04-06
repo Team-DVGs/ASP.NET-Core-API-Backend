@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("684a2b21-0109-47ae-b173-3646c6a3deb4")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Do_an_mon_hoc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22b15be673786a65e587ffe7abd466e1a1c66df3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3d12af415bf826ad7c5f0625a80e6c44b6f0d25")]
 [assembly: System.Reflection.AssemblyProductAttribute("Do_an_mon_hoc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Do_an_mon_hoc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
