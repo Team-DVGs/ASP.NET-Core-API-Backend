@@ -6,7 +6,6 @@ Welcome to the "Mini Market" project repository! This is an ASP.NET Core API des
 
 "Mini Market" is a robust API solution that powers the backend of an e-commerce platform focused on food sales. It provides endpoints for managing products, orders, customers, and more. Key features include:
 
-- **Authentication and Authorization:** Implementing secure user authentication and role-based access control using JWT tokens.
   
 - **Product Management:** Endpoints for adding, updating, and retrieving food products with details like name, description, price, and availability.
 
@@ -24,7 +23,6 @@ Welcome to the "Mini Market" project repository! This is an ASP.NET Core API des
 
 - **Swagger:** Implementing Swagger UI for interactive API documentation to facilitate testing and exploration.
 
-- **Authentication and Authorization:** Implementing JWT-based authentication using ASP.NET Core Identity and policies for role-based access control.
 
 ## 🌱 Current Focus
 
@@ -37,9 +35,6 @@ Welcome to the "Mini Market" project repository! This is an ASP.NET Core API des
 ## 📫 Let's Connect
 
 I'm excited about the "Mini Market" project and open to collaboration or discussions on ASP.NET Core development and e-commerce solutions. Feel free to connect with me:
-
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-- Email: your.email@example.com
 
 If you have any feedback, questions, or suggestions about this project, please don't hesitate to reach out!
 
