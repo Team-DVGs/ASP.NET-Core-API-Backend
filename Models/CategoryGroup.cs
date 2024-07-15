@@ -2,18 +2,28 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Do_an_mon_hoc.Models;
 
 public partial class CategoryGroup
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public string Name { get; set; }
+
+    public override string ToString()
+    {
+        return Name;
+    }
 
     public string Thumbnail { get; set; }
 
     public byte? IsDeleted { get; set; }
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<Category> Categories { get; set; } = new List<Category>();
 }

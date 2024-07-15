@@ -2,18 +2,29 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Do_an_mon_hoc.Models;
 
 public partial class Brand
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
+    public override string ToString()
+    {
+        return Name;
+    }
+
+    [DataType("Markdown")]
     public string Name { get; set; }
 
     public string Thumbnail { get; set; }
 
     public byte? IsDeleted { get; set; }
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

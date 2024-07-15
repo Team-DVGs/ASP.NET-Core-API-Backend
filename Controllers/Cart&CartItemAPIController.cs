@@ -123,7 +123,7 @@ namespace Do_an_mon_hoc.Controllers
                     };
 
                     // Add the new product to the context
-                    await _context.CartItems.AddAsync(newCartItem);
+                    //await _context.CartItems.AddAsync(newCartItem);
                     userCart.CartItems.Add(newCartItem);
                 }
 

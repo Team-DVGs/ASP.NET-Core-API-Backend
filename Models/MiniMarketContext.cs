@@ -455,6 +455,7 @@ public partial class MiniMarketContext : DbContext
                 .HasConstraintName("FK__Wishlist__user_i__2C538F61");
         });
 
+        OnModelCreatingGeneratedProcedures(modelBuilder);
         OnModelCreatingPartial(modelBuilder);
     }
 
