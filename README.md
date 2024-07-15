@@ -5,7 +5,6 @@ Welcome to the "Mini Market" project repository! This is an ASP.NET Core API des
 ## 🚀 Project Overview
 
 "Mini Market" is a robust API solution that powers the backend of an e-commerce platform focused on food sales. It provides endpoints for managing products, orders, customers, and more. Key features include:
-
   
 - **Product Management:** Endpoints for adding, updating, and retrieving food products with details like name, description, price, and availability.
 
@@ -35,6 +34,8 @@ Welcome to the "Mini Market" project repository! This is an ASP.NET Core API des
 ## 📫 Let's Connect
 
 I'm excited about the "Mini Market" project and open to collaboration or discussions on ASP.NET Core development and e-commerce solutions. Feel free to connect with me:
+
+- Email: 21520530@gm.uit.edu.vn
 
 If you have any feedback, questions, or suggestions about this project, please don't hesitate to reach out!
 
