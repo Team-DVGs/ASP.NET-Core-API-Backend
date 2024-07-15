@@ -2,16 +2,25 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Do_an_mon_hoc.Models;
 
 public partial class User
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public string PhoneNumber { get; set; }
 
     public string Fullname { get; set; }
+
+    public override string ToString()
+    {
+        return Id.ToString() + ": " + Fullname;
+    }
 
     public string Email { get; set; }
 
@@ -25,11 +34,15 @@ public partial class User
 
     public byte[] PasswordHash { get; set; }
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<Wishlist> Wishlists { get; set; } = new List<Wishlist>();
 }

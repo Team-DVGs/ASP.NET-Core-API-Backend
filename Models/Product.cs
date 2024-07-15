@@ -2,16 +2,25 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Do_an_mon_hoc.Models;
 
 public partial class Product
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public string Thumbnail { get; set; }
 
     public string Name { get; set; }
+
+    public override string ToString()
+    {
+        return Id + ": " + Name;
+    }
 
     public double RegPrice { get; set; }
 
@@ -49,17 +58,23 @@ public partial class Product
 
     public virtual Brand Brand { get; set; }
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 
     public virtual Category Category { get; set; }
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<Gallery> Galleries { get; set; } = new List<Gallery>();
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<SaleItem> SaleItems { get; set; } = new List<SaleItem>();
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<Wishlist> Wishlists { get; set; } = new List<Wishlist>();
 }

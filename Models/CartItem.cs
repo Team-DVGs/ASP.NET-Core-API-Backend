@@ -2,12 +2,21 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Do_an_mon_hoc.Models;
 
 public partial class CartItem
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
+
+    public override string ToString()
+    {
+        return Product.Name + ": " + Quantity;
+    }
 
     public int? Quantity { get; set; }
 

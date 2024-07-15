@@ -2,16 +2,25 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Do_an_mon_hoc.Models;
 
 public partial class Order
 {
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public string Address { get; set; }
 
     public double? Total { get; set; }
+
+    public override string ToString()
+    {
+        return Id.ToString();
+    }
 
     public string Note { get; set; }
 
@@ -23,6 +32,7 @@ public partial class Order
 
     public int? UserId { get; set; }
 
+    [Display(AutoGenerateField = false)]
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
     public virtual User User { get; set; }

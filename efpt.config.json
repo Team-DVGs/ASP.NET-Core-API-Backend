@@ -74,6 +74,10 @@
       {
          "Name": "[dbo].[Wishlist]",
          "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[uspAddUser]",
+         "ObjectType": 1
       }
    ],
    "UiHint": "laptop-bcjh549e\\vinh.minimarket.dbo",

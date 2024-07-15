@@ -1,4 +1,4 @@
-using Do_an_mon_hoc.Models;
+﻿using Do_an_mon_hoc.Models;
 using Do_an_mon_hoc.AutoMapperConfig;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
@@ -76,6 +76,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseCoreAdminCustomTitle("Quản lý cửa hàng Minimarket");
 
 app.UseAuthorization();
 

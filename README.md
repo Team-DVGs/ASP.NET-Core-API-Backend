@@ -40,3 +40,4 @@ I'm excited about the "Mini Market" project and open to collaboration or discuss
 If you have any feedback, questions, or suggestions about this project, please don't hesitate to reach out!
 
 Happy coding! 🌟
+
